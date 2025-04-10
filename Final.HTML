@@ -1,0 +1,384 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Baladi Orange Details</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f2f5;
+      padding: 40px;
+      margin: 0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 40px;
+    }
+
+    .card {
+      max-width: 900px;
+      margin: auto;
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+      overflow: hidden;
+    }
+
+    .card-header {
+      background-color: #f57c00;
+      color: white;
+      padding: 30px;
+      font-size: 26px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .card-body {
+      padding: 30px;
+    }
+
+    .info-row {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 15px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .info-label {
+      width: 30%;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .info-value {
+      width: 70%;
+      color: #555;
+    }
+
+    .info-value ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .info-value li {
+      margin-bottom: 5px;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #ffa726;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .back-btn:hover {
+      background-color: #fb8c00;
+    }
+
+    .product-image {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+
+    @media (max-width: 600px) {
+      .info-label, .info-value {
+        width: 100%;
+      }
+    }
+  </style>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <h1>Baladi Orange Details</h1>
+
+  <!-- Image for the product -->
+  <img src="your-image-path/baladi_orange.jpg" alt="Baladi Orange" class="product-image">
+
+  <div class="card">
+    <div class="card-header">
+      🍊 Baladi Orange
+    </div>
+    <div class="card-body">
+      <div class="info-row">
+        <div class="info-label">Description</div>
+        <div class="info-value">Small to medium-sized seedy fruits with a Valencia-like taste. Easy to squeeze, deep orange in color, and full of juice.</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">Seasonality</div>
+        <div class="info-value">DEC - JAN</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">Sizes</div>
+        <div class="info-value">56 – 64 – 72 – 80 – 88 – 100 – 113 – 125</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">Carton Weights</div>
+        <div class="info-value">
+          <ul>
+            <li>15 kg carton</li>
+            <li>8 kg carton</li>
+            <li>BINS</li>
+          </ul>
+        </div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">Carton Types</div>
+        <div class="info-value">
+          <ul>
+            <li>Open Top Carton</li>
+            <li>Telescopic Carton</li>
+            <li>Bins 600 Kgs</li>
+          </ul>
+        </div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">Container Load (40 ft)</div>
+        <div class="info-value">
+          <ul>
+            <li><strong>Total Load:</strong> 24–26 tons</li>
+            <li><strong>Cartons:</strong> Around 1300–1400 (depending on carton size)</li>
+          </ul>
+        </div>
+      </div>
+      <a href="index.html" class="back-btn">Back to Products</a>
+    </div>
+  </div>
+
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Products</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f2f5;
+      padding: 40px;
+      margin: 0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 40px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .product-card {
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-header {
+      padding: 20px;
+      font-size: 22px;
+      font-weight: bold;
+      text-align: center;
+      color: #fff;
+    }
+
+    .product-body {
+      padding: 20px;
+      color: #555;
+      font-size: 15px;
+    }
+
+    .product-body p {
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 18px;
+      background-color: #ffa726;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #fb8c00;
+    }
+
+    .orange { background-color: #f57c00; }
+    .lemon { background-color: #fdd835; color: #333; }
+    .pomegranate { background-color: #c2185b; }
+    .mango { background-color: #ffb300; }
+    .mandarin { background-color: #ff6f00; }
+    .strawberry { background-color: #e91e63; }
+    .olive { background-color: #388e3c; }
+    .dates { background-color: #8d6e63; }
+    .tomato { background-color: #e53935; }
+    .cherry-tomato { background-color: #f44336; }
+    .lettuce { background-color: #81c784; }
+    .cucumber { background-color: #4caf50; }
+    .carrot { background-color: #ff9800; }
+    .iceberg { background-color: #b2dfdb; }
+    .green-onion { background-color: #66bb6a; }
+    .bell-pepper { background-color: #ff7043; }
+    .grapes { background-color: #7b1fa2; }
+    .potatoes { background-color: #8d6e63; }
+
+    /* Modal Styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.4);
+      padding-top: 60px;
+    }
+
+    .modal-content {
+      background-color: #fefefe;
+      margin: 5% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      max-width: 600px;
+      border-radius: 10px;
+    }
+
+    .modal-header {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .modal-body {
+      font-size: 16px;
+      color: #333;
+    }
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Our Fresh Products</h1>
+
+  <div class="product-grid">
+
+    <!-- Pomegranate Card -->
+    <div class="product-card">
+      <div class="product-header pomegranate">🍎 Pomegranate</div>
+      <div class="product-body">
+        <p>Sweet and tangy red seeds packed in a tough skin. Grown in Egypt with rich flavor.</p>
+        <p><strong>Season:</strong> Nov - Jan</p>
+        <a href="javascript:void(0);" class="btn" onclick="openModal('pomegranate')">View Details</a>
+      </div>
+    </div>
+
+    <!-- Mango Card -->
+    <div class="product-card">
+      <div class="product-header mango">🥭 Mango</div>
+      <div class="product-body">
+        <p>Sweet, juicy, and aromatic mangoes. Known for their rich flavor and smooth texture.</p>
+        <p><strong>Season:</strong> May - Aug</p>
+        <a href="javascript:void(0);" class="btn" onclick="openModal('mango')">View Details</a>
+      </div>
+    </div>
+
+    <!-- Modal for Pomegranate -->
+    <div id="pomegranate" class="modal">
+      <div class="modal-content">
+
+amr kogak, [4/9/2025 8:30 AM]
+<span class="close" onclick="closeModal('pomegranate')">&times;</span>
+        <div class="modal-header">🍎 Pomegranate Details</div>
+        <div class="modal-body">
+          <p><strong>Origin:</strong> Egypt</p>
+          <p><strong>Varieties:</strong> Egyptian Red Pomegranate</p>
+          <p><strong>Storage:</strong> Keep in a cool, dry place</p>
+          <p><strong>Health Benefits:</strong> High in antioxidants, vitamin C</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Mango -->
+    <div id="mango" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('mango')">&times;</span>
+        <div class="modal-header">🥭 Mango Details</div>
+        <div class="modal-body">
+          <p><strong>Origin:</strong> Egypt</p>
+          <p><strong>Varieties:</strong> Haden, Kent, and Alphonso</p>
+          <p><strong>Storage:</strong> Store at room temperature until ripe, then refrigerate</p>
+          <p><strong>Health Benefits:</strong> Rich in vitamins A and C, supports digestion</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    // Function to open modal
+    function openModal(product) {
+      document.getElementById(product).style.display = "block";
+    }
+
+    // Function to close modal
+    function closeModal(product) {
+      document.getElementById(product).style.display = "none";
+    }
+
+    // Close modal when clicked outside
+    window.onclick = function(event) {
+      var modals = document.getElementsByClassName('modal');
+      for (var i = 0; i < modals.length; i++) {
+        if (event.target == modals[i]) {
+          modals[i].style.display = "none";
+        }
+      }
+    }
+  </script>
+
+</body>
+</html>
